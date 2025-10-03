@@ -447,5 +447,7 @@ appsettings.*.json
 # Ces secrets sont stockés hors du projet localement.
 .secrets/
 
+.keys/
+
 # 4. Logs
 *.log
