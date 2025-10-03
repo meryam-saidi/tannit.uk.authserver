@@ -426,3 +426,25 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# 1. Clés sensibles (JWT, Data Protection, etc.)
+# C'est ici que tempkey.jwk est ignoré
+tempkey.jwk
+*.jwk
+*.key
+*.pfx
+
+# 2. Fichiers de configuration avec secrets
+# Seul le fichier de base 'appsettings.json' est généralement versionné.
+# TOUTES les configurations spécifiques à l'environnement DOIVENT être ignorées.
+appsettings.Development.json
+appsettings.Staging.json
+appsettings.Production.json
+appsettings.*.json
+
+# 3. Fichiers de secrets gérés par l'outil Secret Manager
+# Ces secrets sont stockés hors du projet localement.
+.secrets/
+
+# 4. Logs
+*.log
