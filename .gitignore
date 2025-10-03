@@ -441,6 +441,7 @@ appsettings.Development.json
 appsettings.Staging.json
 appsettings.Production.json
 appsettings.*.json
+appsettings.json
 
 # 3. Fichiers de secrets gérés par l'outil Secret Manager
 # Ces secrets sont stockés hors du projet localement.
